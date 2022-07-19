@@ -1,0 +1,154 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    background: #E5E5E5;
+    font-family: 'Poppins', sans-serif;
+
+}
+/* top players  */
+main{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 870px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    margin-bottom: 26px;
+    border-radius: 5px;
+   
+}
+.top-players{
+  
+   justify-content: center; 
+  padding: 30px;
+  
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-top: 30px;
+}
+.section-title{
+    color: #562EFF;
+    margin-top: 0px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+   
+   
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 18px;
+    
+}
+/* start top blogs */
+.section-title{
+    margin-left: 51px;
+    font-size: 24px;
+}
+.top-blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+    margin-left: 51px;
+    margin-right: 36px;
+    justify-content: space-between;
+    gap: 20px;
+}
+.blogs{
+    display: flex;
+   
+}
+.blog img{
+    width: 177px;
+    height: 117px;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.text-author{
+    font-size: 20px;
+}
+.blog-info a{
+    text-decoration: none;
+    color: #562EFF;
+    font-size: 16px;
+}
+/* latest course styles */
+.courses{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: 51px;
+    margin-right: 36px;
+}
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+}
+
+.filled{
+    color:#FFC014;
+}
+.empty{
+    color: #AEAEAE;
+}
+.course-duration{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      /* width: 58px;  */
+     height: 15px;  
+    background-color:#f5c5b9;
+    border-radius: 30px;
+    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+}
+.clock{
+    color: #ED6B4F;
+   
+    align-items: center;
+}
+.time{
+    color:#ED6B4F;
+}
+ 
+/* ------------------
+media queries 
+-----------------------------*/
+
+@media only screen and (max-width:688px){
+     .container{
+        width: 100%;
+     }
+     .players,.top-blogs,.courses{
+        grid-template-columns: repeat(1 ,1fr);
+     }
+     .player,.blogs,.course{
+        flex-direction: column;
+        
+     }
+     
+     
+    
+}
